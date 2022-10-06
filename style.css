@@ -21,6 +21,10 @@ a {
   padding: 30px 30px 30px;
 }
 
+.maincontent {
+  margin-top: 60px;
+}
+
 .header h1 {
   font-size: 50px;
   }
