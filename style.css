@@ -24,7 +24,7 @@ img{
   background: #fff;
   color: #000;
   /* height: 500px; */
-  padding: 30px 30px 30px;
+  padding-top:30px;
 }
 
 .topright {
@@ -37,7 +37,7 @@ img{
 }
 
 .maincontent {
-  margin-top: 60px;
+  margin-top: 10px;
 }
 
 .header h1 {
@@ -62,8 +62,8 @@ img{
 }
 
 .assignment a:hover {
-  background: #F06;
-  color: #F06;
+  background: rgb(78, 157, 232);
+  color:rgb(78, 157, 232);
   text-decoration: none;
 }
 

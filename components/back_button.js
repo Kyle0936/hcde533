@@ -11,7 +11,7 @@ class BackButton extends React.Component {
 
     return e(
       'button',
-      { onClick: () => window.open("https://kyle0936.github.io/hcde533/") },
+      { onClick: () => window.open("../../") },
       '< Back'
     );
   }
