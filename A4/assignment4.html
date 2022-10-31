@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+    <title>Kyle's HCDE 533 Assignment4</title>
+
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link href="../style.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="header position-relative container">
+
+
+        <a href="../" class="btn btn-outline-secondary btn-sm active" role="button" aria-pressed="true">
+            < Back</a>
+
+                <h1 style="margin-top: 20px">Assignment 4</h1>
+    </div>
+    <div class="container maincontent">
+        <div class="col-9">
+
+
+            I started with the idea to make a box using 5 flat pieces. Then I brainstormed about different types of
+            joints to put two pieces together. I did some research online about what types of joints can be used and I
+            was motivated by snap joints mentioned in <a
+                href="https://all3dp.com/2/3d-printing-snap-fit-design-simply-explained/">this article</a>.  <br /><br />
+
+            I built the snap joint first in Rhino for test prints.  <br /><br />
+
+            Snap joints in Rhino:  <br />
+            <img src="3d_test_piece.jpg"></a><br />
+
+            I experienced issues when printing those small pieces and failed several times to make joints work as
+            expected. I noticed that the bottom layer expanded larger than expected. I tried several times and adjusted
+            the babystep in 3d printer to made a successful pair printed.  <br /><br />
+
+            Failed prints:  <br />
+            <img src="test_piece.jpg"></a>
+
+            Successful print:  <br />
+            <img src="success1.jpg"></a>
+
+            With the working 3d model for the snap joints, I started building the whole piece. I tested several
+            iterations and the accuracy issues together with adhesion issues of 3d printing made so much troubles for
+            me. After several iterations, I changed the design to have only 1 snap joint on each side of a piece to
+            avoid accuracy issues as many as possible.  <br />  <br />
+
+            Iterations of 3d modelings for flat pieces:  <br /> 
+            <img src="3d_test_all.jpg"></a>  <br />
+
+            Failed prints related to adhesion issues: <br /> 
+            <img src="fail1.jpg"></a>
+            <img src="fail2.jpg"></a> <br />
+
+            Iterations of 3d prints for flat pieces: <br />
+            <img src="test_whole.jpg"></a>
+
+            After all, I finalized my design with 3.4 mm as the thickness of the flat piece in rhino and 3 mm as the
+            thickness of the actual printed model. I also added another additional 0.4 mm for the snap joints to printed
+            correctly. <br />  <br />
+
+            Final Rhino design: <br />
+            <img src="3d_latest.jpg"></a> <br />
+
+            Successful printed flat pieces: <br />
+            <img src="success2.jpg"></a> <br />
+
+            After the successful prints of two flat pieces, I printed all 5 pieces to put together and form the box. <br />
+
+            <img src="box.jpg"></a>
+
+
+
+            <a href="gcode.zip">Here is the zipped gcode folder.</a> <br />
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
