@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+    <title>Kyle's HCDE 533 Assignment5</title>
+
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link href="../style.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="header position-relative container">
+
+
+        <a href="../" class="btn btn-outline-secondary btn-sm active" role="button" aria-pressed="true">
+            < Back</a>
+
+                <h1 style="margin-top: 20px">Assignment 5</h1>
+    </div>
+    <div class="container maincontent">
+        <div class="col-9">
+            <h3>Part A</h3>
+
+            I tried to find models related to my fav video game "Souls series" on Thingiverse and I found  <a
+                href="https://www.thingiverse.com/thing:2401490/">this "thing"</a>. The original object is a bonfire, which is an iconic object in the souls series. <br /><br /> 
+
+            Bonfire in Dark Souls:  <br />
+            <img src="ds3.jpg"></a><br />
+
+            The "thing" contains two separated stl files for the bonfire pit and the fire. The fire is a closed mesh while the pit is a block of 9 closed meshes. I exploded the block first and then used "MeshBooleanUnion" to combine all of the closed meshes and ended up with a single closed mesh. I also used "ReduceMesh" to speed up the process.<br />
+            <img src="bonfire.jpg"></a><br />
+            <img src="closed.png"></a><br />
+
+
+            <h3>Part B</h3>
+
+            I started with measuring the latern innereds. <br /> 
+            <img src="measure.jpeg"></a>  <br />
+
+            I decided to keep using the bonfire model I donwloaded and modified it to make it fit with the innereds. I used "MeshBoolenDifference" multiple times to make big holes that can fit with the innereds as well as the light bulb. I tested with printing the base of the lamp but it failed to fit with the innereds firmly.  <br /> 
+            <img src="test.jpeg"></a><br />
+
+            I added two snap joints to make sure the innereds can fit firmly. I tested with printing the joints by themselves again but the initial print failed and stuck in the holes of the innereds. <br />
+            <img src="fail.jpeg"></a><br />
+
+            I modified the snap joints again and started printing the whole base, and this is how it looks like after 12-hours of printing: <br />  <br />
+            <img src="lamp.jpeg"></a> <br />
+            <img src="lamp_light.jpeg"></a> <br />
+
+            <a href="latern.gcode">Here is the gcode file.</a> <br />
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
