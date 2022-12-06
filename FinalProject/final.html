@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+    <title>Kyle's HCDE 533 Final Project</title>
+
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link href="../style.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="header position-relative container">
+
+
+        <a href="../" class="btn btn-outline-secondary btn-sm active" role="button" aria-pressed="true">
+            < Back</a>
+
+                <h1 style="margin-top: 20px">Final Project </h1>
+    </div>
+    <div class="container maincontent">
+        <div class="col-9">
+            <div class="embed-responsive embed-responsive-21by9">
+                <video controls="true" style="width: 100%; height:500px" class="embed-responsive-item">
+                    <source src="showoff.mp4" type="video/mp4"/>
+                </video>
+            </div> <br/><br/>
+
+            <h3>Concept</h3>
+            <div class="mx-auto" style="width: 200px">
+                <img src="init.jpg"></a> <br />
+            </div>
+            I'm inspired by the a popular trend in China where people use digital wooden fish on mobile devices to try
+            to improve their mental health. There have been mobile apps developed for this purpose, such as <a
+                href="https://apps.apple.com/us/app/wooden-fish/id1522144157">this one</a>. The original wooden fish is
+            a type of instrument and is used to increase one's merit in buddhism while nowadays some young people in
+            China online treat it as something to calm their minds down to peace during this difficult time. I was
+            thinking to make a physical version for myself with the similar purpose. <br /><br />
+
+            <img src="inspired.jpg"></a> <br />
+            I found this video where this person made a physical version of an automated wooden fish that can knock by
+            itself with different speeds. I was inspired by the design of how to control the movement of the wooden fish
+            and I decided to design a manual version. Here's the concept sketch: <br /><br />
+            <img src="concept.jpg"></a> <br /> <br />
+
+            <h3>Planned & Out of planned</h3>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Tasks</th>
+                        <th scope="col">Plan to finish By</th>
+                        <th scope="col">Contingency Plan</th>
+                        <th scope="col" style="color:red">IN REAL LIFE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">0</th>
+                        <td>Casting the wooden fish</td>
+                        <td>Nov 19th (DONE already)</td>
+                        <td>N/A</td>
+                        <td>Nov 19th (DONE already)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>CAD Modelling & Grasshopper Script</td>
+                        <td>Nov 22nd</td>
+                        <td>N/A</td>
+                        <td>Nov 21st (ahead of plan) while also changed the plan from separated drum-box and bell to a
+                            box including both the drum and the bell. <br /> <img src="CAD_new.jpeg" /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Laser Cutting (parallel with 3d printing - test print)</td>
+                        <td>Nov 30th</td>
+                        <td>3D print the box rather than using pieces of laser cutted boards to build the box</td>
+                        <td>Nov 30th (on time), while the 5 pieces failed to form a box because of miscaculation for 2
+                            out of 5 pieces. I ended up finishing the updated 2 pieces using 3d printing mainly because
+                            of the lack of access to a laser cutter. <br /> <img src="boardstl.png" /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>3D Printing - test print (parallel with Laser Cutting printing)</td>
+                        <td>Nov 30th</td>
+                        <td>Go back to CAD Modelling and modify models</td>
+                        <td>Dec 1st (delayed), as I ended up spending more iterations of testing than expected.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>3D Printing</td>
+                        <td>Dec 4th</td>
+                        <td>N/A</td>
+                        <td>Dec 3rd (ahead of time), I was able to use parts of the test prints even though there were
+                            extra 2 pieces of the box that needed to be printed.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Documentation (parallel with 3D Printing)</td>
+                        <td>Dec 4th</td>
+                        <td>N/A</td>
+                        <td>Dec 5th (delayed), the documentation took me way longer than I expected.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Finishing Assembling</td>
+                        <td>Dec 6th</td>
+                        <td>N/A</td>
+                        <td>Dec 4th (on time), I was able to finish assembling as soon as all pieces were printed out.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br /><br />
+
+
+            <h3>Steps</h3>
+            <h4>1. Casting (DONE in Assignment6)</h4>
+            I used Rhino to build the molds for the woodenfish's molds first. I used commands mainly around polysurfaces
+            instead of meshes, such as BooleanDifference, mainly because the troubles brought by involving meshes too
+            early in the stage. Then I mixed around 180g in total of Oomoo 30 to get the silicone mold for the
+            woodenfish. As the final step, I mixed 60g of hydrostone and 20g of water and pour into the silicone mold to
+            cast the "hydrostone-fish". <br /><br />
+            <img src="moldformold.jpg"></a> <br />
+            <img src="woodenfish_mold.jpg"></a> <br />
+
+            <h4>2. CAD Modelling</h4>
+            <img src="CAD_new.jpeg" /><br />
+            Here are all the parts that I ended up building models and 3d printing: <br /><br />
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Handler (green)</li>
+                <li class="list-group-item">Drum (green)</li>
+                <li class="list-group-item">Lever (green)</li>
+                <li class="list-group-item">Square Stick (green)</li>
+                <li class="list-group-item">Pentagon Stick (green)</li>
+                <li class="list-group-item">Holders (red)</li>
+                <li class="list-group-item">2 pieces of the box (blue)</li>
+                <li class="list-group-item">Mold for woodenfish's mold (purple)</li>
+            </ul>
+            <br />
+
+            I started with calculating the size of the box based on the casted bell and the size of the drum required to
+            hit it. The lever needs to make the drum drop from 3 cm above to hit the bell to make sounds. As a result,
+            the distance between the stick to fix the drum and the lever is 2cm. The length of the drum is 10cm. <br />
+            <img src="calculate.jpeg" /><br />
+
+            Based on the calculation, I was able to figure out the size of the box that would be laser cutted out of 2D
+            design. I followed <a href="https://www.youtube.com/watch?v=8EUG-dx2lug">this guide</a> to build a
+            grasshopper script that can generate 4 pieces of jagged boards that implemented the interference fits to
+            build a box. After those 4 pieces were baked, I made the fifth piece based on them and also made several
+            holes on them where I could use sticks to fix the drum and the lever later. <br />
+            <img src="box.png" /><br />
+
+            For other parts of system, I started with small parts to test print and iterated the models for 3d printing
+            multiple times. The initial idea was to have the handler and the lever fit closely with the pentagon stick
+            while have the drum hanging by the square stick loosely. Because of the inaccuracy of the 3d printing, I
+            ended up adjusted multiple times to have the fitted sizes. However, the fixation was not strong enough to
+            let me keep the lever rolling with the handler. As a result, I added 4 more pentagon-shaped "holders" to
+            keep them fit with the stick and the box closely and 2 more square-shaped "holders" to keep the drum inside
+            the center of the box. <br /><br />
+
+            <h4>3. Laser cutting</h4>
+            I had the 5 pieces of the box laser cutted using acrylic borads with 6.35 mm thickness. However, because of
+            the miscalculation for two out of five pieces, the box cannot get pressed and fit closely. I ended up with
+            redesigned the two pieces and had them 3d printed which would be shown later. <br /><br />
+
+            <h4>4. 3D printing</h4>
+            <img src="3dsystem.jpeg" /><br />
+            Based on the test prints, I adjusted models severl times and had all required pieces of the system 3d
+            printed, together with additional 2 pieces of the box. <br /><br />
+
+            <h4>5. Assembling</h4>
+            With all the pieces ready, I started assembling them together as shown in the pictures: <br /><br />
+            <img src="lever.jpeg" /><br />
+            <img src="handler.jpeg" /><br />
+            <img src="twosticks.jpeg" /><br />
+            <img src="final.jpeg" /><br /><br />
+
+
+            <h3>Source Files</h3>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">File</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mold for Woodenfish's Mold</td>
+                        <td>3D printing</td>
+                        <td><a href="mold.stl" download>mold.stl</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Mechanical parts</td>
+                        <td>3D printing</td>
+                        <td><a href="necessary.stl" download>necessary.stl</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>5 pieces to form the box</td>
+                        <td>2D laser cutting</td>
+                        <td><a href="lasercut.ai" download>lasercut.ai</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>2 pieces to form the box (alternative)</td>
+                        <td>3D printing</td>
+                        <td><a href="boards.stl" download>boards.stl</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Grasshopper to generate 4 pieces of the box initially</td>
+                        <td>Grasshopper</td>
+                        <td><a href="4Pieces.gh" download>4Pieces.gh</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br /><br />
+
+            <h3>Bill of Materials</h3>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Detail</th>
+                        <th scope="col">Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>(Required) Acrylic boards</td>
+                        <td>Thick: 6.35 mm, Width*Height: 285.85mm * 142.41mm</td>
+                        <td><img src="box_updated.png"></a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>(Required) Filament for 3d printing</td>
+                        <td>13g for necessary parts</td>
+                        <td><img src="necessary.jpeg" /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>(Option1) Filament for 3d printed mold for woodenfish's mold</td>
+                        <td>75g for the mold for woodenfish's mold</td>
+                        <td><img src="3dmold4mold.jpg" /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>(Option1) Silicone Mold for woodenfish's mold</td>
+                        <td>Around 180g in total for woodenfish's mold</td>
+                        <td><img src="moldformold.jpg" /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>(Option1) Hydrostone Wooden Fish</td>
+                        <td>60g Hydrostone mixed with 20g water for each</td>
+                        <td><img src="woodenfish_mold.jpg" /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>(Option2 - Recommended) Filament for 3d printed woodenfish</td>
+                        <td>22g for 3d printed woodenfish</td>
+                        <td><img src="3dmuyu.jpeg" /></td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <br /><br />
+
+            <b>Special thanks to @Kefeng Wang who help me with Rhino. </b> <br /><br />
+
+        </div>
+
+    </div>
+</body>
+
+</html>
